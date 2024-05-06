@@ -62,11 +62,16 @@ Note: you may want to replace target_llm.llm_params.checkpoint with a local path
   ```bash
    python3 main.py --config-name=train target_llm=vicuna_chat target_llm.llm_params.model_name=vicuna-13b-v1.5 target_llm.llm_params.checkpoint=lmsys/vicuna-13b-v1.5 train.q_params.num_chunks=2
    ```
-+ **Example 3:** AdvPrompter on Mistral-7B:
++ **Example 3:** AdvPrompter on Mistral-7B-chat:
   ```bash
    python3 main.py --config-name=train target_llm=mistral_chat
    ```
 
++ **Example 4:** AdvPrompter on Llama2-7B-chat:
+  ```bash
+   python3 main.py --config-name=train target_llm=llama2_chat train.q_params.lambda_val=150
+   ```
+  
 ## 2. Contributors
 
 <a href="https://scholar.google.com/citations?user=njZL5CQAAAAJ">Anselm Paulus*</a>,
